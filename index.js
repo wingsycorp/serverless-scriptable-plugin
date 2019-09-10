@@ -44,7 +44,7 @@ class Scriptable {
   }
 
   runCommand(hookScript) {
-    console.log(`Running command: ${hookScript}`);
+    // console.log(`Running command: ${hookScript}`);
     return execSync(hookScript, { stdio: [this.stdin, this.stdout, this.stderr] });
   }
 
