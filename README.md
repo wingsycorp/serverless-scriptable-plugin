@@ -1,6 +1,4 @@
-# this plugin has been forked to remove the console log of the commands that are run as this may contain sensitive information 
-
-
+# this plugin has been forked to remove the console log of the commands that are run as they may contain sensitive information 
 
 [![npm version](https://badge.fury.io/js/serverless-scriptable-plugin.svg)](https://badge.fury.io/js/serverless-scriptable-plugin)
 [![Build Status](https://travis-ci.org/weixu365/serverless-scriptable-plugin.svg?branch=master)](https://travis-ci.org/weixu365/serverless-scriptable-plugin)
