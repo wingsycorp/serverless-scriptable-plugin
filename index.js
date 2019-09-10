@@ -39,6 +39,9 @@ class Scriptable {
         }
 
         return this.runCommand(script);
+      }).catch(() => {
+        // do not allow the original error to be logged as it could be sensitive
+        throw new Error(`@wingsy/serverless-scriptable-plugin: ${event} script failed.`);
       });
     };
   }
@@ -49,7 +52,7 @@ class Scriptable {
   }
 
   runJavascriptFile(scriptFile) {
-    console.log(`Running javascript file: ${scriptFile}`);
+    // console.log(`Running javascript file: ${scriptFile}`);
     const buildModule = () => {
       const m = new Module(scriptFile, module.parent);
       m.exports = exports;
