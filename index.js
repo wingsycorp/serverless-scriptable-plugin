@@ -41,7 +41,7 @@ class Scriptable {
         return this.runCommand(script);
       }).catch(() => {
         // do not allow the original error to be logged as it could be sensitive
-        throw new Error(`@wingsy/serverless-scriptable-plugin: ${event} script failed.`);
+        throw new Error(`@uptime.app/serverless-scriptable-plugin: ${event} script failed.`);
       });
     };
   }
